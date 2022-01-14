@@ -1,0 +1,29 @@
+package order.alphabatically;
+import java.util.*;
+public class ORDERALPHABATICALLY {
+    public static void main(String[] args) {
+       String str=new String();
+        char temp;
+        int len=str.length();
+        char ch[]=new char[100]; 
+        Scanner sc=new Scanner(System.in);      
+        
+        for(int i=0;i<len;i++){
+              ch[i]=str.charAt(i);
+        }
+         for(int i=0;i<len;i++){
+        System.out.print(ch[i]);}
+         System.out.println(" ");
+  
+        for(int i=0;i<len;i++)
+           for(int j=i+1; j<len;j++)
+        {   if(ch[i]>ch[j]){
+              temp=ch[i];
+              ch[i]=ch[j];
+              ch[j]=temp;   } }
+        for(int i=0;i<len;i++){
+        System.out.print(ch[i]);
+        }
+    }
+    
+}
