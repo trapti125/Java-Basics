@@ -1,0 +1,31 @@
+import java.util.*;
+public class Countoc2 {
+    public static void main(String[] args) {
+        int i,j,counter=0;
+        String s1;
+        char ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter any string ");
+       
+                s1=sc.nextLine();
+                 System.out.println("Enter any character to find occurance");
+        ch=sc.next().charAt(0);
+        int len=s1.length();
+       
+        for(i=0;i<len;i++){
+       
+            if(s1.charAt(i)==ch){
+            counter++;    
+
+            
+            }
+
+          }
+                   System.out.println(
+                   "Number of Occurrence of "
+                    +ch
+                    + " is:" + counter); 
+    
+    }        
+        }
+    
