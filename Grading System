@@ -1,0 +1,42 @@
+package grading.system;
+import java.util.*;
+public class GradingSystem {   
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Student Name");
+        String Str = sc.nextLine();
+        int[] marks = new int[10];
+        int i, n=5,sum=0;
+        for(i=0;i<n;i++)
+        {
+        System.out.println("Enter Marks For Subject "+(i+1));
+        marks[i]=sc.nextInt();
+        sum+=marks[i];
+        }
+        System.out.println("Your total marks = "+sum);
+        //System.out.println("Your Percentage = "+Percentage);
+        if(sum<=500 && sum>450)
+        {
+        System.out.println("Your Grade is : A+ i.e  Excellent");
+        }
+        else if(sum <=450 && sum>400)
+        {System.out.println("Your Grade is : A i.e Very Good");
+        }
+         else if(sum <=400 && sum>350)
+        {System.out.println("Your Grade is : B+ i.e  Good");
+        }
+         else if(sum <=350 && sum>300)
+        {System.out.println("Your Grade is : B i.e Above Average");
+        }
+         else if(sum <=300 && sum>250)
+        {System.out.println("Your Grade is : C i.e Average");
+        }
+         else if(sum <=250 && sum>200)
+        {System.out.println("Your Grade is : P i.e Just Pass");
+        }
+           else if(sum <=200 && sum>=0)
+        {System.out.println("Your Grade is : F i.e Fail");
+        }
+    }
+    
+}
