@@ -1,0 +1,18 @@
+public class Student{
+int id;
+String name;
+Student(){
+System.out.println("this is a default constructor");
+}
+Student(int i, String s){
+id=i;
+name=s;
+}
+public static void main(String args[]){
+Student s=new Student();
+System.out.println("Default constructor");
+System.out.println("Student id: "+s.id+"\n Student name: "+s.name+"\n");
+System.out.println("Parameterized constructor values: \n");
+Student student=new Student(10,"trapti");
+System.out.println("Student id: "+student.id+"\n Student name: "+student.name);
+}}
