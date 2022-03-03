@@ -1,0 +1,13 @@
+import java.util.*;
+public class Testjvacol{
+public static void main(String args[]){
+    Vector<String> v=new Vector<String>();
+    v.add("L");
+    v.add("Sinigami");
+    v.add("Light");
+    Iterator<String> itr=v.iterator();
+    while(itr.hasNext()){
+    System.out.println(itr.next());
+}
+}
+}
