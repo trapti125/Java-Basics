@@ -1,0 +1,15 @@
+import java.util.*;
+public class Testjvacol{
+    public static void main(String args[]){
+    LinkedList<String> al=new LinkedList<String>();
+    al.add("L");
+    al.add("SINIGAMI");
+    al.add("Light");
+    Iterator<String> itr=al.iterator();
+    while(itr.hasNext()){
+        System.out.println(itr.next());
+        
+    }
+        
+    }
+}
