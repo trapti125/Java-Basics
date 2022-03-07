@@ -1,0 +1,38 @@
+//Design and implementation of automatic id generation for the emp starts from 1000 whenever object of this class is created
+//if first obj is created empid will be 1000, for 2nd object it will be 1001(while creating manual objects).
+
+
+import java.util.*;
+public class emp{
+    Scanner sc=new Scanner(System.in);
+     static int empid=1000;
+     String name;
+        String gender;
+        String dept;
+    emp(){
+         empid++;
+          /*int x=1000;
+           this.empid=x+1;
+           x++;*/
+           System.out.println(empid);
+        }
+      public void setdetails(String n, String g,String d){
+          this.name=n;
+          this.gender=g;
+          this.dept=d;
+            
+        }
+        public void getdetails(){
+            System.out.println("your name is :"+name+ "\n Your gender is: "+gender+ "\n your department is:" +dept);
+        }
+    public static void main(String args[]){
+        
+        emp e=new emp();
+         emp e2=new emp();
+         e.setdetails("trapti","female","CSE");
+         e2.setdetails("AKASH","male","CSE");
+        e.getdetails();
+         e2.getdetails();
+        
+    }
+}
